@@ -16,7 +16,7 @@ define({
         ' <form>',
         '   <input type="text" class="text" value="Username" onfocus="this.value = \'\';" onblur="if (this.value == \'\') {this.value = \'Username\';}" >',
         '	<div class="key">',
-        '    <input type="password" value="Password" onfocus="this.value = \'\';" onblur="if (this.value == \'\') {this.value = \'Password\';}">',
+        '    <input type="password" value="Pass" onfocus="if (this.value == \'Pass\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Pass\';}">',
         '   </div>',
         ' </form>',
         ' <div class="sign-in">',
