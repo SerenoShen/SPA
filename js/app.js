@@ -10,6 +10,7 @@ requirejs.config({
         data   : 'app/data',
         ctrl   : 'app/controller',
         domain : 'app/domain',
+        page   : 'app/pages',
         layout : 'app/layout',
         jquery : 'jquery/jquery2'
     }

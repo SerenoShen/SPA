@@ -3,18 +3,14 @@
  */
 define(function(require){
 
-    var $ = require('jquery');
+    var loginPage = require('page/LoginPage');
 
-    function initLoginFormListener(){
-        $('.login-close').on('click', function(c){
-            $('.login-form').fadeOut('slow', function(c){
-                $('.login-form').remove();
-            });
-        });
+    function init(container){
+        loginPage.init(container);
     }
 
     return {
-        initListener : initLoginFormListener
+        init : init
     };
 
 });

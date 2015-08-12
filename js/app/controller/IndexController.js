@@ -3,16 +3,13 @@
  */
 define(function(require){
 
-    var $ = require('jquery');
-    var h2t = require('data/html2text');
+    var indexPage = require('page/IndexPage');
 
-    function initListener(){
-        $("#index-toLogin").on('click', function(c){
-            $('#container').html(h2t['login']);
-        });
+    function init(container){
+        indexPage.init(container);
     }
 
     return {
-        initListener : initListener
+        init : init
     };
 });
