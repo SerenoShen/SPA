@@ -63,6 +63,13 @@ input[type="submit"]:hover {
     -o-transition: 1s all;
 }
 
+input[type="submit"], input[type="text"] {
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+}
+
 @media (max-width: 320px) {
 
     input[type="text"] {
