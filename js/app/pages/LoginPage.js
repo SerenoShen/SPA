@@ -8,6 +8,7 @@ define(function(require){
 
     function init(container){
         $(container).html(h2t['login']);
+        initListener();
     }
 
     function initListener(){

@@ -54,6 +54,22 @@ h1 {
     font-size: 2em;
 }
 
+.copy-rights {
+    text-align: center;
+    margin-top: 1.2em;
+}
+.copy-rights p {
+    color: #637796;
+    font-size: 1.1em;
+}
+.copy-rights p a {
+    color: #fff;
+    font-size: 1em;
+}
+.copy-rights p a:hover{
+    color:#000;
+}
+
 div#container {
   width: 100%;
   height: 100%;

@@ -2,7 +2,24 @@
  * Created by shenlei2 on 2015/8/12.
  */
 define({
-    'index' : 'welcome<br/> <p id="index-toLogin"> to login </p>',
+    'index' : ['',
+        '<div class="index-head-banner"></div>',
+        '<div class="index-content">',
+        ' <h2>Something New is Coming Soon</h2>',
+        ' <h3>We are currently building a new site wich will be ready soon.</h3>',
+        ' <ul id="index-countdown">',
+        '  <li><span id="index-toLogin">login</span><p>登 陆</p></li>',
+        ' </ul>',
+        '</div>',
+        '<div class="index-content-bottom">',
+        ' <div class="index-letter">',
+        '  <input type="text" class="text" value="Enter your email address" onfocus="this.value = \'\';" onblur="if (this.value == \'\') {this.value = \'Enter your email address\';}">',
+        '  <input type="submit" value="Notify me">',
+        ' </div>',
+        '</div>',
+        '<div class="copy-rights">',
+        '	<p>Copyright &copy; 2015.One-One All rights reserved.</p>',
+        '</div>'].join(""),
 
     'login' : ['<h1>Welcome</h1>',
         '<div class="login-form">',
