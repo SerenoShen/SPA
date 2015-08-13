@@ -12,9 +12,22 @@ define(function(require){
     }
 
     function initListener(){
-        $('.login-close').on('click', function(c){
-            $('.login-form').fadeOut('slow', function(c){
-                $('.login-form').remove();
+        showSignUpFormListener();
+    }
+
+    function removeLoginFormListener(){
+        $('#login-2SignUp').on('click', function(c){
+            $('#login-sign-in').fadeOut('slow', function(c){
+                $('#login-sign-in').remove();
+            });
+        });
+    }
+
+    function showSignUpFormListener(){
+        $('#login-2SignUp').on('click', function(c){
+            $('#login-sign-in').fadeOut('fast', function(c){
+                $('#login-sign-in').remove();
+                $('#login-wrapper').html(h2t['sign-up']);
             });
         });
     }
